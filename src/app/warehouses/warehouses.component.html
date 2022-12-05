@@ -1,0 +1,12 @@
+<h2>My Warehouses</h2>
+<ul class="warehouses">
+    <li *ngFor="let warehouse of warehouses">
+        <a routerLink="/detail/{{warehouse.id}}">
+            <span class="id">{{warehouse.id}}</span>
+            {{warehouse.name}}
+            {{warehouse.address}}
+            {{warehouse.latitude}}
+            {{warehouse.longitude}}
+        </a>
+    </li>
+</ul>

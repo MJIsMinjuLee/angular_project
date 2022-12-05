@@ -1,0 +1,9 @@
+<h2>Top Warehouses</h2>
+<div class="warehouses-menu">
+    <a *ngFor="let warehouse of warehouses" routerLink="/detail/{{warehouse.id}}">
+        {{warehouse.name}}
+        {{warehouse.address}}
+        {{warehouse.latitude}}
+        {{warehouse.longitude}}
+    </a>
+</div>

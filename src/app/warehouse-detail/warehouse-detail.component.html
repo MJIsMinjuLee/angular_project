@@ -1,0 +1,26 @@
+<div *ngIf="warehouse">
+
+    <h2>{{warehouse.name | uppercase}} Detail</h2>
+    <div><span>id: </span>{{warehouse.id}}</div>
+    <div>
+        <label for="warehouse-name">Warehouse name: </label>
+        <input id="warehouse-name"
+        [(ngModel)]="warehouse.name" placeholder="Warehouse name"/>
+    </div>
+    <div>
+        <label for="warehouse-address">Warehouse address: </label>
+        <input id="warehouse-address"
+        [(ngModel)]="warehouse.address" placeholder="Warehouse address"/>
+    </div>
+    <div>
+        <label for="warehouse-latitude">Warehouse latitude: </label>
+        <input id="warehouse-latitude"
+        [(ngModel)]="warehouse.latitude" placeholder="Warehouse latitude"/>
+    </div>
+    <div>
+        <label for="warehouse-longitude">Warehouse longitude: </label>
+        <input id="warehouse-longitude"
+        [(ngModel)]="warehouse.longitude" placeholder="Warehouse longitude"/>
+    </div>
+    <button type="button" (click)="goBack()">go back</button>
+</div>
